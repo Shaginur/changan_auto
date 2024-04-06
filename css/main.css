@@ -1,0 +1,335 @@
+a,
+button {
+  cursor: pointer;
+}
+main {
+  margin-bottom: 278px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #3e3e3e;
+  margin-top: 56px;
+  margin-bottom: 32px;
+}
+
+.main_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 424px);
+  grid-template-rows: repeat(2, 250px);
+  gap: 12px;
+  grid-template-areas:
+    "header1 header2 header4"
+    "header1 header3 header4";
+}
+
+.main_item {
+  display: flex;
+  flex-direction: column;
+}
+.main_item-grid1 {
+  background-image: url("../img/bg/Rectangle 615.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 32px;
+  grid-area: header1;
+  position: relative;
+  border-radius: 12px;
+}
+
+.main_item-grid2 {
+  padding: 32px 97px 49px 32px;
+  box-sizing: border-box;
+  color: #fff;
+  padding-bottom: 49px;
+  background-image: url("../img/bg/Rectangle 616.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: header2;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.main_item-before1::before {
+  content: url("../img/before/Group 827.png");
+  display: block;
+  width: 195px;
+  height: 195px;
+  position: absolute;
+  right: -99px;
+  bottom: -31px;
+  z-index: -1;
+}
+
+.main_item-img2 {
+  position: relative;
+  width: 231px;
+}
+
+.main_item-img2 img {
+  position: absolute;
+  bottom: -29px;
+  right: -160px;
+}
+
+.main_item-grid3 {
+  grid-area: header4;
+  color: #fff;
+  padding: 32px 54px 0 32px;
+  box-sizing: border-box;
+  background-image: url("../img/bg/Rectangle 618.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.main_item-before2::before {
+  content: url("../img/avto/Frame 828 (1).png");
+  width: 413px;
+  height: 261px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.main_item-img3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 347px;
+  height: 165px;
+}
+
+.main_item-grid4 {
+  padding: 32px 97px 71px 32px;
+  box-sizing: border-box;
+  color: #fff;
+  position: relative;
+  grid-area: header3;
+  background-image: url("../img/bg/Rectangle 617.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.main_item-img4 {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  width: 125px;
+}
+
+.main_item-titel {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.main_item-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 32px;
+}
+
+.main_item-btn {
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 148px;
+}
+
+.main_item-img {
+  padding: 12px;
+  margin-top: 106px;
+  box-sizing: border-box;
+  width: 400px;
+}
+
+@media screen and (max-width: 1199px) {
+  .main-title {
+    width: 623px;
+    line-height: 29px;
+  }
+
+  .main_wrapper {
+    grid-template-columns: repeat(2, 420px);
+    grid-template-rows: repeat(2, 233px);
+    grid-template-areas:
+      "header1 header2 "
+      "header3 header4";
+  }
+
+  .main_item-img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 0;
+    width: 217px;
+    height: 93px;
+  }
+
+  .main_item-grid2 {
+    padding: 32px 82px 32px 32px;
+  }
+
+  .main_item-before2::before {
+    content: url("../img/avto/kaskad-dry 1.png");
+    width: 217px;
+    height: 93px;
+    bottom: 0px;
+    left: 196px;
+  }
+
+  .main_item-img2 img {
+    display: none;
+  }
+
+  .main_item-before1::before {
+    content: url("../img/avto/bg (1).png");
+    width: 217px;
+    height: 93px;
+    bottom: -11px;
+    right: -147px;
+  }
+
+  .main_item-grid1 {
+    padding: 32px 82px 32px 32px;
+  }
+
+  .main_item-grid3 {
+    padding: 32px 82px 32px 32px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .main_wrapper {
+    grid-template-columns: repeat(1, 680px);
+    grid-template-rows: repeat(4, 233px);
+    grid-template-areas:
+      "header1"
+      "header2"
+      "header3"
+      "header4";
+  }
+
+  .main_item-grid1,
+  .main_item-grid3,
+  .main_item-grid2,
+  .main_item-grid4 {
+    padding-right: 342px;
+  }
+
+  .main_item-img {
+    right: 20px;
+  }
+
+  .main_item-before1::before {
+    right: -402px;
+  }
+
+  .main_item-img4 {
+    right: 20px;
+  }
+
+  .main_item-before2::before {
+    left: 443px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main_wrapper {
+    grid-template-columns: repeat(1, 542px);
+    grid-template-rows: repeat(4, 194px);
+  }
+
+  .main_item-grid1,
+  .main_item-grid3,
+  .main_item-grid2,
+  .main_item-grid4 {
+    padding-right: 249px;
+  }
+
+  .main_item-before1::before {
+    right: -269px;
+  }
+
+  .main_item-before2::before {
+    left: 312px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .main_wrapper {
+    grid-template-columns: repeat(1, 335px);
+  }
+
+  .main-title {
+    font-size: 16px;
+    width: 335px;
+    line-height: 19.36px;
+  }
+
+  .main_item-grid1,
+  .main_item-grid3,
+  .main_item-grid2,
+  .main_item-grid4 {
+    padding: 16px 35px 16px 16px;
+  }
+
+  .main_item-img {
+    width: 149px;
+    height: 68px;
+    right: 10px;
+  }
+
+  .main_item-before1::before {
+    content: url("../img/avto/DLYKASKADA 3.png");
+    right: -144px;
+    bottom: -38px;
+  }
+
+  .main_item-text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 11px;
+  }
+
+  .main_item-btn {
+    padding: 12px 12px;
+    padding: 12px 12px;
+    max-width: 148px;
+  }
+
+  .main_item-titel {
+    line-height: 18px;
+  }
+
+  .main_item-img4 {
+    width: 92px;
+  }
+
+  .main_item-before2::before {
+    content: url("../img/avto/DLYKASKADA 4.png");
+    left: 180px;
+    bottom: -26px;
+  }
+
+  .main-title {
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+}
