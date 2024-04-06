@@ -1,4 +1,4 @@
 # changan_auto
 
--для запуска
+для запуска
 -npn run dev
