@@ -1,6 +1,11 @@
 html {
   position: relative;
 }
+.hamburger,
+#clous {
+    cursor: pointer;
+}
+
 .modal_nav {
   position: absolute;
   width: 500px;
@@ -14,7 +19,7 @@ html {
   background-color: #fff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -134%);
+  transform: translate(-50%, -106%);
 }
 
 .modal_wrapper {
@@ -59,14 +64,19 @@ html {
   line-height: 24px;
 }
 
-@media screen and (max-width: 700px) {
-  .nav_botom-address {
+.nav_botom-address {
     display: flex;
     flex-direction: column;
     gap: 10px;
     text-decoration: none;
     color: #666666;
   }
+
+.nav_btn:hover {
+    background-color: #006CD8;
+}
+
+@media screen and (max-width: 700px) {
 
   .modal_nav {
     width: 320px;
