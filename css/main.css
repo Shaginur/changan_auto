@@ -159,6 +159,10 @@ main {
   width: 400px;
 }
 
+.main_item-btn:hover {
+  background-color: #B4B4B4;
+}
+
 @media screen and (max-width: 1199px) {
   .main-title {
     width: 623px;
@@ -313,6 +317,9 @@ main {
     padding: 12px 12px;
     max-width: 148px;
   }
+
+
+
 
   .main_item-titel {
     line-height: 18px;

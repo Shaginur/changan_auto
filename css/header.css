@@ -2,6 +2,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+
 .hader_top-container {
   margin-top: 12px;
   display: flex;
@@ -31,6 +32,10 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
+}
+
+.header_top-btn:hover {
+  background-color: #006CD8;
 }
 
 .header_top {
