@@ -1,13 +1,11 @@
-html {
-  position: relative;
-}
+
 .hamburger,
 #clous {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal_nav {
-  position: absolute;
+  position: fixed;
   width: 500px;
   display: none;
   flex-direction: column;
@@ -17,9 +15,10 @@ html {
   padding: 32px;
   z-index: 2;
   background-color: #fff;
-  top: 50%;
+  top: -18%;
   left: 50%;
-  transform: translate(-50%, -106%);
+  transform: translate(-50%, 50%);
+  z-index: 2;
 }
 
 .modal_wrapper {
@@ -65,19 +64,18 @@ html {
 }
 
 .nav_botom-address {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-decoration: none;
-    color: #666666;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: #666666;
+}
 
 .nav_btn:hover {
-    background-color: #006CD8;
+  background-color: #006cd8;
 }
 
 @media screen and (max-width: 700px) {
-
   .modal_nav {
     width: 320px;
   }
